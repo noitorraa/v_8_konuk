@@ -2,6 +2,8 @@ package com.example.konuk_v_8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,12 +15,22 @@ public class PersonalArea extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personalarea);
-        ImageButton btnBack = findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(this);
+        Button btnMaps = findViewById(R.id.button);
     }
 
-    @Override
     public void onClick(View view) {
+        Intent i;
+        i = new Intent(this, Login.class);
+        startActivity(i);
+    }
+    public void onClickSetting(View view) {
+        Intent i;
+        i = new Intent(this, Setting.class);
+        startActivity(i);
+    }
 
+    public  void onClickMaps(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=Googleplex"));
+        startActivity(intent);
     }
 }

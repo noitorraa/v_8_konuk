@@ -7,7 +7,7 @@
     tools:context=".PersonalArea">
 
     <TextView
-        android:id="@+id/tLK"
+        android:id="@+id/text"
         android:layout_width="186dp"
         android:layout_height="39dp"
         android:text="Личный кабинет"
@@ -18,6 +18,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="287dp"
+        android:layout_height="33dp"
+        android:text="Добро пожаловать, USERNAME!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        tools:ignore="DuplicateIds" />
 
     <ImageButton
         android:id="@+id/btnSetting"
@@ -36,7 +50,7 @@
         android:id="@+id/btnBack"
         android:layout_width="51dp"
         android:layout_height="47dp"
-        android:onClick="onClickBack"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -44,4 +58,97 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@mipmap/back_foreground" />
+
+    <TextView
+        android:id="@+id/tvSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продать"
+        android:background="@drawable/backgr"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Купить"
+        android:background="@drawable/backgr"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:text="Смотреть квартиры на карте"
+        android:onClick="onClickMaps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="266dp"
+        android:layout_height="27dp"
+        android:text="Последняя ваша публикация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="381dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776"
+        app:srcCompat="@mipmap/home_foreground" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="157dp"
+        android:layout_height="24dp"
+        android:text="22 декабря"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="156dp"
+        android:layout_height="23dp"
+        android:text="2-х комнатная, 56 кв.м"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
